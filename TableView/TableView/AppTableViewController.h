@@ -10,4 +10,8 @@
 
 @interface AppTableViewController : UITableViewController
 
+@property NSMutableArray* appNome;
+@property NSMutableArray* appImg;
+@property NSMutableArray* appCategoria;
+
 @end

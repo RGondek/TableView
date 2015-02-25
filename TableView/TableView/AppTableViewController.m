@@ -7,6 +7,7 @@
 //
 
 #import "AppTableViewController.h"
+#import "AppTableViewCell.h"
 
 @interface AppTableViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _appNome = [[NSMutableArray alloc] initWithObjects:@"Aplicativo01", @"Aplicativo02", @"Aplicativo03", @"Aplicativo04", nil];
+    _appCategoria = [[NSMutableArray alloc] initWithObjects:@"Cat01", @"Cat02", @"Cat03", @"Cat04", nil];
+    _appImg = [[NSMutableArray alloc] initWithObjects:@"img01.png", @"img02.png", @"img03.png", @"img04.png", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -40,12 +45,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return _appNome.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppCelula" forIndexPath:indexPath];
+    
+    AppTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppCelula" forIndexPath:indexPath];
+    
+    long row = [indexPath row];
+    
+    [cell.AppNome setText:_appNome[row]];
+    [cell.AppImagem setImage:[UIImage imageNamed:_appImg[row]]];
+    [cell.AppCategoria setText:_appCategoria[row]];
     
     // Configure the cell...
     
