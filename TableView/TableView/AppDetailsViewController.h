@@ -11,6 +11,8 @@
 @interface AppDetailsViewController : UIViewController
 
 @property NSArray *detalhes;
+@property NSMutableArray *AppFuncionando;
+@property NSMutableArray *Appdescricao;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imagemApp;
 @property (weak, nonatomic) IBOutlet UILabel *nomeApp;
