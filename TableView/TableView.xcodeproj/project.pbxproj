@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BCA52C11A9E507D003C176E /* img01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C01A9E507D003C176E /* img01.png */; };
+		4BCA52C31A9E5094003C176E /* img02.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C21A9E5094003C176E /* img02.png */; };
+		4BCA52C81A9E50FF003C176E /* img03.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C41A9E50FF003C176E /* img03.png */; };
+		4BCA52C91A9E50FF003C176E /* img04.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C51A9E50FF003C176E /* img04.png */; };
+		4BCA52CA1A9E50FF003C176E /* img05.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C61A9E50FF003C176E /* img05.png */; };
+		4BCA52CB1A9E50FF003C176E /* img06.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA52C71A9E50FF003C176E /* img06.png */; };
 		B244FE4B1A9E45FB001F34B2 /* AppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B244FE4A1A9E45FB001F34B2 /* AppTableViewController.m */; };
 		B244FE4E1A9E4614001F34B2 /* AppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B244FE4D1A9E4614001F34B2 /* AppTableViewCell.m */; };
 		D594BE7F1A9E4240003BBB96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D594BE7E1A9E4240003BBB96 /* main.m */; };
@@ -28,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BCA52C01A9E507D003C176E /* img01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img01.png; path = ../../../img01.png; sourceTree = "<group>"; };
+		4BCA52C21A9E5094003C176E /* img02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img02.png; path = ../../../img02.png; sourceTree = "<group>"; };
+		4BCA52C41A9E50FF003C176E /* img03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img03.png; path = ../../../img03.png; sourceTree = "<group>"; };
+		4BCA52C51A9E50FF003C176E /* img04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img04.png; path = ../../../img04.png; sourceTree = "<group>"; };
+		4BCA52C61A9E50FF003C176E /* img05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img05.png; path = ../../../img05.png; sourceTree = "<group>"; };
+		4BCA52C71A9E50FF003C176E /* img06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img06.png; path = ../../../img06.png; sourceTree = "<group>"; };
 		B244FE491A9E45FB001F34B2 /* AppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewController.h; sourceTree = "<group>"; };
 		B244FE4A1A9E45FB001F34B2 /* AppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTableViewController.m; sourceTree = "<group>"; };
 		B244FE4C1A9E4614001F34B2 /* AppTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTableViewCell.h; sourceTree = "<group>"; };
@@ -86,9 +98,15 @@
 			children = (
 				D594BE801A9E4240003BBB96 /* AppDelegate.h */,
 				D594BE811A9E4240003BBB96 /* AppDelegate.m */,
+				4BCA52C01A9E507D003C176E /* img01.png */,
 				D594BE861A9E4240003BBB96 /* Main.storyboard */,
+				4BCA52C21A9E5094003C176E /* img02.png */,
 				B244FE491A9E45FB001F34B2 /* AppTableViewController.h */,
 				B244FE4A1A9E45FB001F34B2 /* AppTableViewController.m */,
+				4BCA52C41A9E50FF003C176E /* img03.png */,
+				4BCA52C51A9E50FF003C176E /* img04.png */,
+				4BCA52C61A9E50FF003C176E /* img05.png */,
+				4BCA52C71A9E50FF003C176E /* img06.png */,
 				B244FE4C1A9E4614001F34B2 /* AppTableViewCell.h */,
 				B244FE4D1A9E4614001F34B2 /* AppTableViewCell.m */,
 				D594BE891A9E4240003BBB96 /* Images.xcassets */,
@@ -204,9 +222,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCA52C91A9E50FF003C176E /* img04.png in Resources */,
 				D594BE881A9E4240003BBB96 /* Main.storyboard in Resources */,
+				4BCA52C31A9E5094003C176E /* img02.png in Resources */,
+				4BCA52C81A9E50FF003C176E /* img03.png in Resources */,
 				D594BE8D1A9E4240003BBB96 /* LaunchScreen.xib in Resources */,
+				4BCA52C11A9E507D003C176E /* img01.png in Resources */,
+				4BCA52CA1A9E50FF003C176E /* img05.png in Resources */,
 				D594BE8A1A9E4240003BBB96 /* Images.xcassets in Resources */,
+				4BCA52CB1A9E50FF003C176E /* img06.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

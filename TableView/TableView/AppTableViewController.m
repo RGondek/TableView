@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _appNome = [[NSMutableArray alloc] initWithObjects:@"Aplicativo01", @"Aplicativo02", @"Aplicativo03", @"Aplicativo04", nil];
-    _appCategoria = [[NSMutableArray alloc] initWithObjects:@"Cat01", @"Cat02", @"Cat03", @"Cat04", nil];
-    _appImg = [[NSMutableArray alloc] initWithObjects:@"img01.png", @"img02.png", @"img03.png", @"img04.png", nil];
+    _appNome = [[NSMutableArray alloc] initWithObjects:@"Facebook", @"TwoDots", @"Spotify", @"Candy Crush", @"WhatsApp", @"Shazam", nil];
+    _appCategoria = [[NSMutableArray alloc] initWithObjects:@"Redes Sociais", @"Jogos", @"Música", @"Jogos", @"Redes Sociais", @"Música", nil];
+    _appImg = [[NSMutableArray alloc] initWithObjects:@"img01.png", @"img02.png", @"img03.png", @"img04.png", @"img05.png",@"img06.png",nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
