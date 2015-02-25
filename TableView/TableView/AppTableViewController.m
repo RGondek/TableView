@@ -59,6 +59,8 @@
     
     long row = [indexPath row];
     
+    
+    
     [cell.AppNome setText:_appNome[row]];
     [cell.AppImagem setImage:[UIImage imageNamed:_appImg[row]]];
     [cell.AppCategoria setText:_appCategoria[row]];
@@ -69,13 +71,12 @@
 }
 
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -90,11 +91,13 @@
     }   
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+
+//// Override to support rearranging the table view.
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+//    
+//    NSString *stringParaMudar = [self.]
+//}
+
 
 /*
 // Override to support conditional rearranging of the table view.
