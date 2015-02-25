@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>69D1E70C-FD8A-4B6A-BC0D-6CC6B7092D10</string>
+	<string>60E559DA-5879-49A5-8898-95AD771A9B69</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TableView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>24413F5B2F8F36EF696E058555B3C0F0DCD345CE</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TableView</string>
+			<string>TableViewApp</string>
 		</dict>
 	</array>
 </dict>

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--App Details View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="AppDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,12 +15,92 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iF-YN-YO9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="64" width="107" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p2-ib-gEl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="106" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-mj-JAM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="87" y="223" width="240" height="202"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XsG-pN-LTG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="44" width="129" height="109"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiW-5r-V5a">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="481" width="280" height="208"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCZ-PL-w8i">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="710" width="39" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="botaoVoltar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KPv-SR-IjI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4iF-YN-YO9"/>
+                                <exclude reference="9p2-ib-gEl"/>
+                                <exclude reference="0h9-mj-JAM"/>
+                                <exclude reference="XsG-pN-LTG"/>
+                                <exclude reference="eiW-5r-V5a"/>
+                                <exclude reference="JCZ-PL-w8i"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4iF-YN-YO9"/>
+                                <include reference="9p2-ib-gEl"/>
+                                <include reference="0h9-mj-JAM"/>
+                                <include reference="XsG-pN-LTG"/>
+                                <include reference="eiW-5r-V5a"/>
+                                <include reference="JCZ-PL-w8i"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="categoriaApp" destination="9p2-ib-gEl" id="xTC-uP-amO"/>
+                        <outlet property="descricaoApp" destination="eiW-5r-V5a" id="UN6-wP-6Xx"/>
+                        <outlet property="imagemApp" destination="XsG-pN-LTG" id="Xtl-8e-1fr"/>
+                        <outlet property="imagemDetalhadaApp" destination="0h9-mj-JAM" id="jvh-1A-wO6"/>
+                        <outlet property="nomeApp" destination="4iF-YN-YO9" id="LOv-Bn-yer"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="306.75"/>
+            <point key="canvasLocation" x="954" y="219"/>
         </scene>
         <!--App Table View Controller-->
         <scene sceneID="dpc-Hp-rx1">
@@ -31,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="AppCelula" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCelula" id="kEd-ci-keJ" customClass="AppTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="AppCelula" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCelula" rowHeight="45" id="kEd-ci-keJ" customClass="AppTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kEd-ci-keJ" id="ufE-WL-Sv4">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -57,7 +137,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQh-lN-uRN">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="0.0" width="92" height="44"/>
+                                                <rect key="frame" x="17" y="0.0" width="65" height="44"/>
                                             </variation>
                                         </imageView>
                                     </subviews>
@@ -80,6 +160,7 @@
                                     <outlet property="AppCategoria" destination="6NY-lK-QEA" id="xZf-du-IEB"/>
                                     <outlet property="AppImagem" destination="CQh-lN-uRN" id="PPB-hH-w4e"/>
                                     <outlet property="AppNome" destination="sQD-iY-ViS" id="35j-el-4V1"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="ShowAppDetails" id="4W4-KA-nTD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -91,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhs-oV-CLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.5" y="306.75"/>
+            <point key="canvasLocation" x="243" y="219"/>
         </scene>
     </scenes>
 </document>

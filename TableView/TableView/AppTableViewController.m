@@ -8,6 +8,7 @@
 
 #import "AppTableViewController.h"
 #import "AppTableViewCell.h"
+#import "AppDetailsViewController.h"
 
 @interface AppTableViewController ()
 
@@ -99,14 +100,28 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"AppCelula"]) {
+       [segue destinationViewController];
+        
+        AppDetailsViewController *details = (AppDetailsViewController *) segue.destinationViewController;
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        details.detalhes =  [[NSArray alloc] initWithObjects:[_appNome objectAtIndex:([indexPath row])], [_appCategoria objectAtIndex:[indexPath row]], [_appImg objectAtIndex:[indexPath row]], nil];
+        
+    
+    
+        }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
 }
-*/
+
 
 @end
