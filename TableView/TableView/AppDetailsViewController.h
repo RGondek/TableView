@@ -11,6 +11,7 @@
 @interface AppDetailsViewController : UIViewController
 
 @property NSArray *detalhes;
+@property NSUInteger ind;
 @property NSMutableArray *AppFuncionando;
 @property NSMutableArray *Appdescricao;
 

@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
     UIEdgeInsets inset = UIEdgeInsetsMake(25, 0, 0, 0);
     self.tableView.contentInset = inset;
     
@@ -122,10 +120,12 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        details.detalhes =  [[NSArray alloc] initWithObjects:[_appNome objectAtIndex:([indexPath row])], [_appCategoria objectAtIndex:[indexPath row]], [_appImg objectAtIndex:[indexPath row]], nil];
+        long row = [indexPath row];
         
-    
-    
+        details.detalhes =  [[NSArray alloc] initWithObjects:[_appNome objectAtIndex:row], [_appCategoria objectAtIndex:[indexPath row]], [_appImg objectAtIndex:row], nil];
+        
+        details.ind = row;
+        
         }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
