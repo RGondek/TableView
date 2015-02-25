@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [_nomeApp setText:[_detalhes objectAtIndex:0]];
+    [_categoriaApp setText:[_detalhes objectAtIndex:1]];
+    [_imagemApp setImage:[UIImage imageNamed:[_detalhes objectAtIndex:2]]];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -36,5 +41,7 @@
 */
 
 - (IBAction)botaoVoltar:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

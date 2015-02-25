@@ -16,9 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nomeApp;
 @property (weak, nonatomic) IBOutlet UILabel *categoriaApp;
 
-
-
-
 @property (weak, nonatomic) IBOutlet UIImageView *imagemDetalhadaApp;
 @property (weak, nonatomic) IBOutlet UILabel *descricaoApp;
 - (IBAction)botaoVoltar:(id)sender;

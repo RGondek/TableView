@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIEdgeInsets inset = UIEdgeInsetsMake(25, 0, 0, 0);
+    self.tableView.contentInset = inset;
+    
     _appNome = [[NSMutableArray alloc] initWithObjects:@"Facebook", @"TwoDots", @"Spotify", @"Candy Crush", @"WhatsApp", @"Shazam", nil];
     _appCategoria = [[NSMutableArray alloc] initWithObjects:@"Redes Sociais", @"Jogos", @"Música", @"Jogos", @"Redes Sociais", @"Música", nil];
     _appImg = [[NSMutableArray alloc] initWithObjects:@"img01.png", @"img02.png", @"img03.png", @"img04.png", @"img05.png",@"img06.png",nil];
@@ -74,9 +77,11 @@
 }
 */
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [_appNome removeObjectAtIndex:[indexPath row]];
+    [_appCategoria removeObjectAtIndex:[indexPath row]];
+    [_appImg removeObjectAtIndex:[indexPath row]];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -84,7 +89,6 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
 /*
 // Override to support rearranging the table view.
@@ -106,7 +110,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([[segue identifier] isEqualToString:@"AppCelula"]) {
+    if ([[segue identifier] isEqualToString:@"ShowAppDetails"]) {
        [segue destinationViewController];
         
         AppDetailsViewController *details = (AppDetailsViewController *) segue.destinationViewController;
